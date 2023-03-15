@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginMainActivity">
+
+    <RadioGroup
+        android:id="@+id/selectLoginMethodRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/loginByPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textSize="20dp"
+            android:text="密码登录" />
+
+        <RadioButton
+            android:id="@+id/loginByValidButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="验证码登录" />
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="手机号码: " />
+
+        <EditText
+            android:id="@+id/inputPhoneNumber"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:background="@drawable/edit_selector"
+            android:layout_marginRight="5dp"
+            android:maxLength="11"
+            android:hint="请输入手机号码"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/checkPhoneNumber"
+        android:visibility="gone"
+        android:layout_marginLeft="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:text="检查电话号码" />
+
+    <LinearLayout
+        android:id="@+id/loginByPasswordLinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="登录密码: " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_selector"
+                android:hint="请输入密码"
+                android:maxLength="8"
+                android:inputType="textPassword" />
+
+            <android.widget.Button
+                android:id="@+id/forgetPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_nine_selector"
+                android:textSize="15dp"
+                android:text="忘记密码" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginByValidCodeLinerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="验证码: " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/inputValidCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_selector"
+                android:hint="请输入验证码"
+                android:maxLength="6"
+                android:inputType="number" />
+
+            <android.widget.Button
+                android:id="@+id/getValidCodeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_nine_selector"
+                android:textSize="15dp"
+                android:text="获取验证码" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/isRememberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:text="记住密码" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:letterSpacing="1"
+        android:textSize="20dp"
+        android:text="登录" />
+
+</LinearLayout>

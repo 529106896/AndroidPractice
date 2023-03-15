@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginForgetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="输入新密码: " />
+
+        <EditText
+            android:id="@+id/inputNewPassword"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_selector"
+            android:layout_marginRight="5dp"
+            android:maxLength="8"
+            android:hint="请输入新密码"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/checkPasswordIsLegal"
+        android:visibility="gone"
+        android:layout_marginLeft="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ff0000"
+        android:text="检查密码是否合法" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="确认新密码: " />
+
+        <EditText
+            android:id="@+id/affirmNewPassword"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_selector"
+            android:layout_marginRight="5dp"
+            android:maxLength="8"
+            android:hint="请再次输入新密码"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/checkPasswordIsIdentical"
+        android:visibility="gone"
+        android:layout_marginLeft="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="20dp"
+        android:text="检查两次密码是否一致" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="验证码: " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/inputValidCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_selector"
+                android:hint="请输入验证码"
+                android:maxLength="6"
+                android:inputType="number" />
+
+            <android.widget.Button
+                android:id="@+id/getValidCodeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_nine_selector"
+                android:textSize="15dp"
+                android:text="获取验证码" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/affirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:letterSpacing="1"
+        android:textSize="20dp"
+        android:text="确定" />
+</LinearLayout>

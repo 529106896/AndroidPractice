@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chapter5"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginSuccessActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginForgetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TimePickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DatePickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AlertDialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditHideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditFocusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditTextTest"
+            android:exported="true" />
+        <activity
+            android:name=".RadioButtonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SwitchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CheckBoxActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ButtonTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DrawableShapeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

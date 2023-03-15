@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="2"
+    tools:context=".GridLayout">
+    <TextView
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:background="#ffcccc"
+        android:text="粉红色"/>
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:background="#ffaa00"
+        android:text="橙色"/>
+    <!--  可以不设置layout_width和layout_height  -->
+    <!--  使用layout_xxxWeight让其自动占比  -->
+    <TextView
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:background="#00ff00"
+        android:text="绿色"/>
+    <TextView
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:background="#660066"
+        android:text="紫色"/>
+
+</GridLayout>

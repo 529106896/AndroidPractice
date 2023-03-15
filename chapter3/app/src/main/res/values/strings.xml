@@ -1,0 +1,15 @@
+<resources>
+    <string name="error_msg">这是Logger Error报错信息</string>
+    <string name="app_name">AppTest</string>
+    <string name="textTest1">这是字体测试1</string>
+    <string name="textTest2">这是字体测试2</string>
+    <string name="textTest3">这是字体测试3</string>
+    <string name="textTest4">这是字体测试4</string>
+    <string name="setWidthByCode">通过代码指定视图宽度</string>
+    <!--  wrap_content 宽度与内容自适应  -->
+    <string name="setWidthByWrap">视图宽度采用wrap_content定义</string>
+    <!--  match_parent 宽度与上级视图保持一致  -->
+    <string name="setWidthByMatch">视图宽度采用match_parent定义</string>
+    <!--  宽度采用固定大小  -->
+    <string name="setWidthByHardCode">视图宽度采用固定大小</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="#00aaff"
+    android:orientation="vertical"
+    tools:context=".ViewMarginActivity">
+    <LinearLayout
+        android:id="@+id/tv_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="#ffff99"
+        android:padding="60dp">
+        <!-- 如果同时规定了元素的padding和内部元素的padding，那么会优先考虑外部的padding -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#ff0000"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
